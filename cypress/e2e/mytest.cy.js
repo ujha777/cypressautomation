@@ -17,4 +17,9 @@ describe('My First Test', () => {
       // includes '/commands/actions'
       cy.url().should('include', '/commands/actions')
     })
+    describe('My Second Test',()=>{
+        it('open google page url',()=>{
+            cy.visit('https://www.google.com/')
+        })
+    })
   })
